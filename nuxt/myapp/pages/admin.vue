@@ -93,7 +93,7 @@ export default {
             }
         },
         get_data(){
-            axios.get('http://43.229.149.142:8000/show').then(response => {
+            axios.get('http://localhost:8000/show').then(response => {
                     this.items = response.data
                 })
         }
