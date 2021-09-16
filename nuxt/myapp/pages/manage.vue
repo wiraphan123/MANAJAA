@@ -171,7 +171,7 @@ export default {
         console.log('area2 : ',area2);
         console.log('x1: ',x1 , 'y1: ', y1);
 
-        axios.post('http://43.229.149.142:8000/check_in',{
+        axios.post('http://localhost:8000/check_in',{
           uid:this.id,
           time:this.time,
           date:this.date
@@ -231,7 +231,7 @@ export default {
         console.log('area2 : ',area2);
         console.log('x1: ',x1 , 'y1: ', y1);
 
-        axios.post('http://43.229.149.142:8000/check_out',{
+        axios.post('http://localhost:8000/check_out',{
           uid:this.id,
           time:this.time,
           date:this.date
