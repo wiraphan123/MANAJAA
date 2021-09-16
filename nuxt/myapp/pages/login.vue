@@ -66,7 +66,7 @@ import axios from 'axios'
                 'error'
                 )
         }else {
-          axios.post('http://43.229.149.142:8000/login',{
+          axios.post('http://localhost:8000/login',{
             email:this.email,
             password:this.password
           }).then(response => {
