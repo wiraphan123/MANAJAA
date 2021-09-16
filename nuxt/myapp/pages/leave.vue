@@ -138,7 +138,7 @@ import {mapActions, mapState} from 'vuex'
         }
       },
       check_leaves(){
-        axios.post('http://43.229.149.142:8000/check_day_leave', {
+        axios.post('http://localhost:8000/check_day_leave', {
           uid:JSON.parse(localStorage.getItem('store')).id
         }).then(response =>{
           if (response.data.result3 == 'you dont not leave'){
@@ -173,7 +173,7 @@ import {mapActions, mapState} from 'vuex'
         const date_check = String(year + '-' + month + '-' + day);
 
 
-        axios.post('http://43.229.149.142:8000/leave',{
+        axios.post('http://localhost:8000/leave',{
             uid: this.id,
             start: this.start,
             stop: this.stop,
