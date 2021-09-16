@@ -58,7 +58,7 @@ export default {
         }
       },
     get_data(){
-      axios.get('http://43.229.149.142:8000/show_add_ot').then(response => {
+      axios.get('http://localhost:8000/show_add_ot').then(response => {
         this.items = response.data
         //console.log(this.items)
       })
