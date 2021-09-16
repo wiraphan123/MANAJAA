@@ -179,7 +179,7 @@ import {mapActions, mapState} from 'vuex'
                 miniVariant: false,
                 right: true,
                 rightDrawer: false,
-                title: 'Artisan Digital'
+                title: 'MANAJAA'
             }
         }
     }

@@ -136,11 +136,11 @@ export default {
       }
     },
     showPosition1(position) {
-      const kaow1 = 19.029361;
-      const kaow2 = 99.926046;
+      const kaow1 = 18.81390846692452;
+      const kaow2 = 98.97396568977324;
 
-      const artisan1 = 19.0300154;//ปัจจุบัน
-      const artisan2 = 99.9269446;//ปัจจุบัน
+      const artisan1 = 18.813519344289674;//ปัจจุบัน
+      const artisan2 = 98.97372195306697;//ปัจจุบัน
 
       const x = document.getElementById("demo1")
       const y = document.getElementById('demo2')
@@ -148,7 +148,7 @@ export default {
       console.log(y);
 
       const x1 = x.innerHTML = position.coords.latitude;
-      const y1 = y.innerHTML = position.coords.longitude;
+      const y1 = y.innerHTML = position.coords.longitude; 
 
       const area1 = (this.calcCrow(kaow1, kaow2, artisan1, artisan2).toFixed(1));//artisan area
       const area2 = (this.calcCrow(x1, y1, artisan1, artisan2).toFixed(1));//area ?
@@ -196,11 +196,12 @@ export default {
       }
     },
     showPosition2(position) {
-      const kaow1 = 19.029361;
-      const kaow2 = 99.926046;
 
-      const artisan1 = 19.0300154;//ปัจจุบัน
-      const artisan2 = 99.9269446;//ปัจจุบัน
+      const kaow1 = 18.81390846692452;
+      const kaow2 = 98.97396568977324;
+
+      const artisan1 = 18.813519344289674;//ปัจจุบัน
+      const artisan2 = 98.97372195306697;//ปัจจุบัน
 
       const x = document.getElementById("demo1")
       const y = document.getElementById('demo2')
