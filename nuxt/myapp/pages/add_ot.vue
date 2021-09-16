@@ -141,12 +141,12 @@ export default {
     },
     methods:{
         get_data(){
-            axios.get('http://43.229.149.142:8000/show_add_ot').then(response => {
+            axios.get('http://localhost:8000/show_add_ot').then(response => {
                 this.items = response.data
             })
         },
         add(){
-            axios.post('http://43.229.149.142:8000/add_ot_controller',{
+            axios.post('http://localhost:8000/add_ot_controller',{
                 date:this.date,
                 time:this.time,
                 time_start:this.time_start,
