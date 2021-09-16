@@ -42,7 +42,7 @@ export default {
   },
   methods:{
     get_history(){
-      axios.post('http://43.229.149.142:8000/search_graph/',{
+      axios.post('http://localhost:8000/search_graph/',{
         uid:JSON.parse(localStorage.getItem('store')).id,
         search_month:this.search_month,
         search_year:this.search_year,
