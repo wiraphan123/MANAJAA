@@ -109,7 +109,7 @@ export default {
         }
       },
         get_data(){
-            axios.get('http://43.229.149.142:8000/view/' + this.id).then(response =>{
+            axios.get('http://localhost:8000/view/' + this.id).then(response =>{
                     this.uid = response.data[0].id,
                     this.f_name = response.data[0].f_name,
                     this.l_name = response.data[0].l_name,
@@ -118,7 +118,7 @@ export default {
                 })
         },
         get_check_in(){
-          axios.post('http://43.229.149.142:8000/search_graph/', {
+          axios.post('http://localhost:8000/search_graph/', {
             uid:this.id,
             search_month:this.search_month,
             search_year:this.search_year,

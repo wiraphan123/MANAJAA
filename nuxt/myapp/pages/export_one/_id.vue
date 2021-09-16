@@ -58,7 +58,7 @@ export default {
             }
         },
         get_data(){
-            axios.post('http://43.229.149.142:8000/post_check_in_controller/',{
+            axios.post('http://localhost:8000/post_check_in_controller/',{
                 uid:this.id
             }).then (response => {
                 this.items = response.data

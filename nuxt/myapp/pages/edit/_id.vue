@@ -76,7 +76,7 @@ export default {
         }
       },
         get_data(){
-          axios.get('http://43.229.149.142:8000/get_edit/' + this.id).then(response =>{
+          axios.get('http://localhost:8000/get_edit/' + this.id).then(response =>{
                   this.uid = response.data[0].id,
                   this.f_name = response.data[0].f_name,
                   this.l_name = response.data[0].l_name,
@@ -86,7 +86,7 @@ export default {
                 })
         },
         put_edit(){
-            axios.put('http://43.229.149.142:8000/post_edit/', {
+            axios.put('http://localhost:8000/post_edit/', {
               f_name:this.f_name,
               l_name:this.l_name,
               email:this.email,

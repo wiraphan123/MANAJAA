@@ -65,7 +65,7 @@ export default {
         }
       },
     get_data(){
-      axios.get('http://43.229.149.142:8000/search_data_ot/' + this.id).then(response => {
+      axios.get('http://localhost:8000/search_data_ot/' + this.id).then(response => {
         this.date = response.data[0].date,
         this.time_start = response.data[0].time_start,
         this.time_stop = response.data[0].time_stop,
@@ -84,7 +84,7 @@ export default {
       return time_check;
     },
     add_data(){
-      axios.post('http://43.229.149.142:8000/save_ot', {
+      axios.post('http://localhost:8000/save_ot', {
         uid:this.data_array.id,
         date:this.date,
         time:this.get_time(),
