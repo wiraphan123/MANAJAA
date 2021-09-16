@@ -7,7 +7,7 @@
     <template v-slot:default>
       <thead>
         <tr>
-          <th class="text-left">#</th>
+          <th class="text-left">NO</th>
           <th class="text-left">Firstname</th>
           <th class="text-left">Lastname</th>
           <th class="text-left">Email</th>
