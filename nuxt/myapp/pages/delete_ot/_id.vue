@@ -22,7 +22,7 @@ export default {
             confirmButtonText: 'Yes, delete it!'
             }).then((result) => {
             if (result.value) {
-                axios.post('http://43.229.149.142:8000/delete_ot', {
+                axios.post('http://localhost:8000/delete_ot', {
                 id:this.id
                 }).then(response => {
                     console.log(response)
