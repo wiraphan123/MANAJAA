@@ -118,7 +118,7 @@ import axios from 'axios'
               'error'
               )
         }else{
-          axios.post('http://43.229.149.142:8000/register',{
+          axios.post('http://localhost:8000/register',{
             f_name:this.f_name,
             l_name:this.l_name,
             email:this.email,
