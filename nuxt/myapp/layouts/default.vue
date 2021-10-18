@@ -100,9 +100,9 @@ import {mapActions, mapState} from 'vuex'
         get_data(){
           // this.set_state2({
           //   id:3,
-          //   f_name:'songpol',
-          //   l_name:'takha',
-          //   email:'pungpondstr@gmail.com',
+          //   f_name:'wiraphan',
+          //   l_name:'Lanoi',
+          //   email:'wiraphanBB@gmail.com',
           //   user_role:'Part-time'
           // })
           this.set_state2(JSON.parse(localStorage.getItem('store')))
