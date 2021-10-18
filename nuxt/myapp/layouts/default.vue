@@ -58,7 +58,7 @@
         </v-list-item>
       </v-list>
 
-      
+
 
     </v-navigation-drawer>
     <v-app-bar
@@ -109,7 +109,7 @@ import {mapActions, mapState} from 'vuex'
           //console.log(JSON.parse(localStorage.getItem('store')))
         }
       },
-      
+
         data () {
             return {
                 clipped: false,
@@ -130,6 +130,11 @@ import {mapActions, mapState} from 'vuex'
                         icon: 'mdi-account-plus',
                         title: 'Register',
                         to: '/register'
+                    },
+                    {
+                      icon: 'mdi-account',
+                      title: 'Checkin Checkout',
+                      to: '/checkin_checkout'
                     }
                 ],
                 items2: [

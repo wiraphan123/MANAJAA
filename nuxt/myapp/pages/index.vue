@@ -15,47 +15,57 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(item, index) in users" :key="index">
-          <td>{{ item.id }}</td>
-          <td>{{ item.f_name }}</td>
-          <td>{{ item.l_name }}</td>
-          <td>{{ item.email }}</td>
-          <td>{{ item.user_role }}</td>
-        </tr>
-      </tbody>
-    </template>
-  </v-simple-table>
-</template>
-            </div>
-          </div>
+                <tr
+                  v-for="(item, index) in users"
+                  :key="index"
+                  @click="goToCheckIn(item)"
+                >
+                  <td>{{ item.id }}</td>
+                  <td>{{ item.f_name }}</td>
+                  <td>{{ item.l_name }}</td>
+                  <td>{{ item.email }}</td>
+                  <td>{{ item.user_role }}</td>
+                </tr>
+              </tbody>
+            </template>
+          </v-simple-table>
+        </template>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
-  export default {
-    mounted() {
-      this.get_data()
+import axios from "axios";
+export default {
+  mounted() {
+    this.get_data();
+  },
+  methods: {
+    get_data() {
+      axios.get("http://localhost:8000/show").then(response => {
+        this.users = response.data;
+      });
     },
-    methods: {
-      get_data(){
-        axios.get('http://localhost:8000/show').then(response => {
-          this.users = response.data
-        })
-      }
-    },
-    data () {
-      return {
-        users:[
-          {
-            id:null,
-            f_name:null,
-            l_name:null,
-            email:null,
-            user_role:null
-          }
-        ]
-      }
-    },
+    goToCheckIn(item) {
+      this.$router.push({
+        path: "/checkin_checkout",
+        query: { member_id: item.id }
+      });
+    }
+  },
+  data() {
+    return {
+      users: [
+        {
+          id: null,
+          f_name: null,
+          l_name: null,
+          email: null,
+          user_role: null
+        }
+      ]
+    };
   }
+};
 </script>
