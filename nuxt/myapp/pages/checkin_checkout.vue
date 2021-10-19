@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="font-weight-bold">Check In Check Out</h1>
+    <h1 class="font-weight-bold"> Check In Check Out </h1>
     <v-form ref="form">
       <v-container class="d-flex justify-content-between">
         <div class="d-flex flex-column w-50">
