@@ -9,7 +9,7 @@
       <v-form ref="form" v-model="valid" lazy-validation>
         <div class="card-body">
           <h5 class="text-uppercase font-weight-bold text-center">
-            Member Login
+           Login
           </h5>
           <v-container>
             <v-row>
