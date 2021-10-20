@@ -8,7 +8,7 @@
                         <thead>
                             <tr>
                             <th class="text-left">User ID</th>
-                            <th class="text-left">Day</th>
+                            <th class="text-left">Days</th>
                             <th class="text-left">Month</th>
                             <th class="text-left">Year</th>
                             <th class="text-left">Check_in</th>
@@ -41,7 +41,7 @@
                         large
                         @click="exportTableToExcel('tblData')"
                     >
-                        Export File
+                        Export File to...
                     </v-btn>
                 </div>
 

@@ -38,7 +38,7 @@
                                             class="ma-2"
                                             color="warning"
                                             >
-                                            Edit
+                                            Edit User
                                         </v-btn>
                                     </nuxt-link>
 
@@ -47,7 +47,7 @@
                                             class="ma-2"
                                             color="error"
                                             >
-                                            Delete
+                                            Delete Text&User
                                         </v-btn>
                                     </nuxt-link>
 
@@ -56,7 +56,7 @@
                                             class="ma-2"
                                             color="success"
                                             >
-                                            Export File
+                                            Export File to...
                                         </v-btn>
                                     </nuxt-link>
 
