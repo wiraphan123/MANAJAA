@@ -1,25 +1,21 @@
 <template>
-  <div class='container' align='center'>
+  <div class='container' align='center'  >
     <div class="card">
-            <div class="card-body">
+            <div class="card-body width: 100rem ">
               <div class="row" align='center'>
                   <div class="col-sm">
-                      <div class="card">
-                          <div class="card-body">
+                          <div class="card-body ">
                               <v-btn
                                 class="ma-2"
                                 color="primary"
-                                @click="getLocation1()"
-                                large
+                                @click="getLocation1()"                               
+                                large                      
                                 >
                                 Check-in
                             </v-btn>
                           </div>
                       </div>
-                  </div>
-
-                  <div class="col-sm">
-                      <div class="card">
+                     <div class="col-sm">                     
                           <div class="card-body">
                               <v-btn
                                 class="ma-2"
@@ -30,11 +26,21 @@
                                 Check-out
                             </v-btn>
                           </div>
-                      </div>
-                  </div>
-
+                      </div>         
                   <div class="col-sm">
-                      <div class="card">
+                        <div class="card-body">
+                              <nuxt-link to="/event_ot">
+                                <v-btn
+                                    class="ma-2"
+                                    color="info"
+                                    large
+                                    >
+                                    EVENT OT
+                                </v-btn>
+                              </nuxt-link>
+                          </div>
+                     </div>                
+                     <div class="col-sm">                   
                           <div class="card-body">
                               <nuxt-link to="/leave">
                                 <v-btn
@@ -48,24 +54,7 @@
                           </div>
                       </div>
                   </div>
-
-                  <div class="col-sm">
-                      <div class="card">
-                          <div class="card-body">
-                              <nuxt-link to="/event_ot">
-                                <v-btn
-                                    class="ma-2"
-                                    color="info"
-                                    large
-                                    >
-                                    EVENT OT
-                                </v-btn>
-                              </nuxt-link>
-                          </div>
-                      </div>
-                  </div>
               </div>
-            </div>
           </div>
     <div id='demo1'></div>
     <div id='demo2'></div>
