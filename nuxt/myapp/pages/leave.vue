@@ -1,8 +1,8 @@
 <template>
   <div class='container' align='center'>
+    <img src="/leave.png" alt="" style="width: 30rem " />
     <div class="card">
               <div class="card-body">
-
                   <v-alert
                     v-model="alert"
                     dismissible
@@ -14,7 +14,6 @@
                   >
                     {{string_alert}}
                   </v-alert>
-
                   <v-container>
                     <v-row>
                     <v-col cols="12" lg="6">
@@ -155,9 +154,9 @@ import {mapActions, mapState} from 'vuex'
         return `${month}/${day}/${year}`
       },
       login(){
-        const date1 = new Date(this.date1); 
-        const date2 = new Date(this.date2); 
-        const Difference_In_Time = date2.getTime() - date1.getTime(); 
+        const date1 = new Date(this.date1);
+        const date2 = new Date(this.date2);
+        const Difference_In_Time = date2.getTime() - date1.getTime();
         const date_leave = Difference_In_Time / 86400000;
 
         const asiaTime = new Date().toLocaleString({timeZone: "Asia/Bangkok"});
