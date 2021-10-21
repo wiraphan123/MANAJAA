@@ -68,7 +68,7 @@
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
 
-      <img src="../img/logos.jpg" width='200px' height='50px'>
+      <img src="../img/logos.jpg" width='150px' height='40px'>
 
       <v-spacer />
 
