@@ -1,5 +1,6 @@
 <template>
   <div class='container' align='center'>
+    <img src="/ottime.png" alt="" style="width: 20rem" />
     <div class='card'>
       <div class='card-body'>
         <template>
@@ -30,7 +31,7 @@
                   <td>
                     <nuxt-link :to="{path:'./ot/' + item.id}">{{ item.ot_name }}</nuxt-link>
                   </td>
-                  
+
                 </tr>
               </tbody>
             </template>
@@ -54,7 +55,7 @@ export default {
         if (JSON.parse(localStorage.getItem('store')) == ''){
           location.href = '/login'
         }else{
-          
+
         }
       },
     get_data(){
